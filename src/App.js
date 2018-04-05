@@ -11,10 +11,22 @@ class App extends Component {
 			<div className='App'>
 				<header>
                     <nav>
-                        <Link to='/'>Landing</Link>
-                        <Link to='/library'>Library</Link>
+						<div className='home-button'>
+							<h1>
+								<Link to='/'>
+									Slaps
+								</Link>
+							</h1>
+						</div>
+
+						<div className='library-button'>
+							<Link to='/library'>
+								<button className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+									Library
+								</button>
+							</Link>
+						</div>
                     </nav>
-				    <h1>Slaps</h1>
 				</header>
 
                 <main>
