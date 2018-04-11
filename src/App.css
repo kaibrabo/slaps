@@ -1,28 +1,49 @@
 .App {
-  text-align: center;
+    text-align: center;
+    width: 960px;
+    border: 1px solid black;
+    color: white;
+    background-color: rgb(10,10,10);
+}
+a {
+    text-decoration: none;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.home-button a {
+    color: #100;
+    text-decoration: none;
+    float: left;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.library-button a {
+    float: right;
 }
 
-.App-title {
-  font-size: 1.5em;
+table#song-list {
+    margin-left: 345px;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 20px 15px;
 }
 
-.App-intro {
-  font-size: large;
+tr.song:hover td.play-pause-number {
+    cursor: pointer;
+    opacity: 100;
+    transition: opacity 0.5s ease-out;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+i {
+    cursor: pointer;
+}
+
+td.play-pause-number {
+    opacity: 0;
+}
+
+div.player-bar-container {
+    background-color: rgb(66, 134, 244);
+}
+
+section#buttons i {
+    margin: 20px 15px;
 }
