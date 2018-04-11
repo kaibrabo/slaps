@@ -1,7 +1,12 @@
 .App {
-  text-align: center;
-  width: 960px;
-  border: 1px solid black;
+    text-align: center;
+    width: 960px;
+    border: 1px solid black;
+    color: white;
+    background-color: rgb(10,10,10);
+}
+a {
+    text-decoration: none;
 }
 
 .home-button a {
@@ -12,4 +17,33 @@
 
 .library-button a {
     float: right;
+}
+
+table#song-list {
+    margin-left: 345px;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 20px 15px;
+}
+
+tr.song:hover td.play-pause-number {
+    cursor: pointer;
+    opacity: 100;
+    transition: opacity 0.5s ease-out;
+}
+
+i {
+    cursor: pointer;
+}
+
+td.play-pause-number {
+    opacity: 0;
+}
+
+div.player-bar-container {
+    background-color: rgb(66, 134, 244);
+}
+
+section#buttons i {
+    margin: 20px 15px;
 }

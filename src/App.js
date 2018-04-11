@@ -12,18 +12,15 @@ class App extends Component {
 				<header>
                     <nav>
 						<div className='home-button'>
-							<h1>
-								<Link to='/'>
-									Slaps
-								</Link>
-							</h1>
+							<h3>
+								Slaps
+								<Link to='/'></Link>
+							</h3>
 						</div>
 
 						<div className='library-button'>
 							<Link to='/library'>
-								<button className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-									Library
-								</button>
+								<i class="material-icons">library_music</i>
 							</Link>
 						</div>
                     </nav>

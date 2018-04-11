@@ -129,6 +129,7 @@ class Album extends Component {
 
     // HTML render
     render() {
+
         return (
             <section className="album">
                 <section id='album-info'>
@@ -137,12 +138,12 @@ class Album extends Component {
                         src={ this.state.album.albumCover }/>
 
                     <div className='album-details'>
-                        <h1 id='album-title'>
-                            { this.state.album.title }
-                        </h1>
-                        <h2 className='artist'>
+                        <h1 className='artist'>
                             { this.state.album.artist }
-                        </h2>
+                        </h1>
+                        <h3 id='album-title'>
+                            { this.state.album.title }
+                        </h3>
                         <div id='release-info'>
                             { this.state.album.releaseInfo }
                         </div>
@@ -164,10 +165,27 @@ class Album extends Component {
                                     onClick={
                                         () => this.handleSongClick(song)
                                     }>
-                                    <td>
-                                        {/*<i class="icon ion-play"></i>*/}
-                                        {/*<i class="icon ion-pause"></i>*/}
 
+                                    <td className='play-pause-number'>
+
+                                        {/* if this song is the current song, play/pause button */}
+
+                                        {/* play pause button */}
+                                        {this.props.isPlaying ?
+                                            <i class="material-icons"
+                                                id="play-pause"
+                                                onClick={this.props.handleSongClick}>
+                                            pause_circle_outline</i> :
+                                            <i class="material-icons"
+                                                id="play-pause"
+                                                onClick={this.props.handleSongClick}>
+                                            play_circle_outline</i>
+                                        }
+
+                                    </td>
+
+                                    <td>
+                                        {/* song index # */}
                                         {i+1}
                                     </td>
                                     <td>
