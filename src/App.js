@@ -11,16 +11,17 @@ class App extends Component {
 			<div className='App'>
 				<header>
                     <nav>
-						<div className='home-button'>
-							<h3>
-								Slaps
-								<Link to='/'></Link>
-							</h3>
-						</div>
+						<Link to='/'>
+							<div className='home-button'>
+								<h3>
+									Slaps
+								</h3>
+							</div>
+						</Link>
 
 						<div className='library-button'>
 							<Link to='/library'>
-								<i class="material-icons">library_music</i>
+								<i className="material-icons">library_music</i>
 							</Link>
 						</div>
                     </nav>

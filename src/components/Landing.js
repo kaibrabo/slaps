@@ -1,7 +1,12 @@
 import React from 'react';
+import landing from '../landing.jpg';
 
 const Landing = () => (
     <section className="landing">
+        <section className='landing-photo'>
+            <img src={landing} alt={'landing'} />
+        </section>
+
         <section className="intro-header">
             <h1 className='hero-title'>Bring your music along</h1>
             <p>
