@@ -29,7 +29,7 @@ const Landing = () => (
                 </p>
             </div>
             <div className='point'>
-                <h2 className='point-title'>Unlimited, Streaming, Ad-free</h2>
+                <h2 className='point-title'>Unlimited + Ad-free</h2>
                 <p className='point-description'>
                     No Arbitrary Limits, No Distractions
                 </p>

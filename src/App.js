@@ -13,15 +13,15 @@ class App extends Component {
                     <nav>
 						<Link to='/'>
 							<div className='home-button'>
-								<h3>
+								<h1>
 									Slaps
-								</h3>
+								</h1>
 							</div>
 						</Link>
 
 						<div className='library-button'>
 							<Link to='/library'>
-								<i className="material-icons">library_music</i>
+								Library
 							</Link>
 						</div>
                     </nav>
