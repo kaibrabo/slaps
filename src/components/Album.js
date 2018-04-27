@@ -132,8 +132,8 @@ class Album extends Component {
 
         return (
             <section className="album">
-                <section id='album-info'>
-                    <img id='album-cover-art'
+                <section className='album-info'>
+                    <img className='album-cover-art'
                         alt='album-cover'
                         src={ this.state.album.albumCover }/>
 
@@ -141,20 +141,20 @@ class Album extends Component {
                         <h1 className='artist'>
                             { this.state.album.artist }
                         </h1>
-                        <h3 id='album-title'>
+                        <h3 className='album-title'>
                             { this.state.album.title }
                         </h3>
-                        <div id='release-info'>
+                        <div className='release-info'>
                             { this.state.album.releaseInfo }
                         </div>
                     </div>
                 </section>
 
-                <table id='song-list'>
+                <table className='song-list'>
                     <colgroup>
-                        <col id='song-number-column'/>
-                        <col id='song-title-column'/>
-                        <col id='song-duration-column'/>
+                        <col className='song-number-column'/>
+                        <col className='song-title-column'/>
+                        <col className='song-duration-column'/>
                     </colgroup>
 
                     <tbody>
@@ -172,12 +172,10 @@ class Album extends Component {
 
                                         {/* play pause button */}
                                         {this.props.isPlaying ?
-                                            <i class="material-icons"
-                                                id="play-pause"
+                                            <i className="material-icons play-pause"
                                                 onClick={this.props.handleSongClick}>
                                             pause_circle_outline</i> :
-                                            <i class="material-icons"
-                                                id="play-pause"
+                                            <i className="material-icons play-pause"
                                                 onClick={this.props.handleSongClick}>
                                             play_circle_outline</i>
                                         }

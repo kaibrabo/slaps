@@ -1,7 +1,12 @@
 import React from 'react';
+import landing from '../landing.jpg';
 
 const Landing = () => (
     <section className="landing">
+        <section className='landing-photo'>
+            <img src={landing} alt={'landing'} />
+        </section>
+
         <section className="intro-header">
             <h1 className='hero-title'>Bring your music along</h1>
             <p>
@@ -24,7 +29,7 @@ const Landing = () => (
                 </p>
             </div>
             <div className='point'>
-                <h2 className='point-title'>Unlimited, Streaming, Ad-free</h2>
+                <h2 className='point-title'>Unlimited + Ad-free</h2>
                 <p className='point-description'>
                     No Arbitrary Limits, No Distractions
                 </p>
