@@ -1,0 +1,30 @@
+.landing {
+    /*background-color: black;*/
+    /*color: white;*/
+    height: 100%;
+}
+
+.hero-title {
+    padding: 20vh 0 10vh;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.selling-points {
+    background: -webkit-linear-gradient(rgba(41, 85, 155, 0.6), rgba(41, 85, 155, 0.4));
+    background: -moz-linear-gradient(rgba(41, 85, 155, 0.6), rgba(41, 85, 155, 0.4));
+    background: -o-linear-gradient(rgba(41, 85, 155, 0.6), rgba(41, 85, 155, 0.4));
+    background: linear-gradient(rgba(41, 85, 155, 0.6), rgba(41, 85, 155, 0.4));;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 65vh;
+}
+
+.selling-point {
+    margin: 20px auto 0;
+    width: 30%;
+    min-width: 250px;
+}
